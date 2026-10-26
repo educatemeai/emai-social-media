@@ -1,0 +1,260 @@
+{
+  "batch": "2027-01-16",
+  "version": 3,
+  "approvalPhrase": "approve batch 2027-01-16 v3",
+  "brandId": "7636342",
+  "timezone": "Europe/London",
+  "instructions": [
+    "Schedule nothing until Rej says \"approve batch 2027-01-16 v3\" in chat. Any other version or wording is not approval.",
+    "Call getScheduledPosts for the whole date range first. If a post with the same date, time and network is already scheduled, do not schedule it again: tell Rej.",
+    "One Metricool post per network (one provider each), using that network's caption, title and networkData exactly as given. Media and altText are the same for every network.",
+    "Only platforms with status \"schedule\" (and check getBrandSettings networksData). \"pending connection\" (YouTube until it is connected) and \"skipped on purpose\" (Facebook: Instagram auto-shares) are not scheduled; list them for Rej.",
+    "Skip any post with doNotSchedule true.",
+    "Metricool plan: Free, 20 published posts a month counted per network. A post with planGate is scheduled only once Rej has said in chat that the Starter upgrade is done; until then tell Rej it is waiting on that.",
+    "Reels: media is the MP4 (soundtrack built in); use cover as videoThumbnailUrl. Instagram carousels stay silent; TikTok photo carousels have autoAddMusic true.",
+    "Times are UK local (Europe/London). Never change a date, time or caption without Rej asking.",
+    "After scheduling, confirm in chat with the Metricool ids. Claude Code logs them at the start of its next session (no email)."
+  ],
+  "posts": [
+    {
+      "id": "2027-01-16-sat-show-your-working-2-angles",
+      "title": "Angles in a triangle, with reasons",
+      "when": "Sat 16 Jan 2027, 9am (proposed)",
+      "dateTime": "2027-01-16T09:00",
+      "timezone": "Europe/London",
+      "format": "reel",
+      "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2027-01-16/v3/2027-01-16-sat-show-your-working-2-angles/cover.jpg",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2027-01-16/v3/2027-01-16-sat-show-your-working-2-angles/reel.mp4"
+      ],
+      "altText": [
+        "Short animated video with on-screen captions. Handwriting appears on squared paper as if written by a cartoon pen, with Em’s three coloured circles in the top corner. Opens with the title ‘Angles in a triangle, with reasons’. Two triangles are drawn: one with angles 52°, 71° and x; an isosceles triangle with a top angle of 40°, two equal sides marked, and base angles y and y. Underneath: x = 180 − 52 − 71 = 57°, ringed in green with a tick. The note ‘reason?’ appears and the circles wobble with a ‘hmm’, then the reason is written in green: ‘angles in a triangle add up to 180°’. Next: y = (180 − 40) ÷ 2 = 70°, ticked, with the reason ‘base angles in an isosceles triangle are equal’. The circles celebrate. Ends with ‘Show every step.’, ‘Try Educate Me AI free · link in bio’ and the Educate Me AI logo."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "REEL",
+          "label": "Instagram Reel",
+          "caption": "Angles in a triangle, with reasons. The three angles add up to 180°, so the missing angle is 180 − 52 − 71 = 57°. In an isosceles triangle the two base angles are equal, so with a top angle of 40° each base angle is (180 − 40) ÷ 2 = 70°.\n\nIf a question asks you to give reasons, write the reason in words as well as the number, like “angles in a triangle add up to 180°”.\n\nSave this for your next angles question. Try Educate Me AI free · link in bio.\n\n#GCSE #GCSEMaths #Geometry #MathsTips #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "REEL",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "video",
+          "label": "TikTok video",
+          "caption": "Angles in a triangle add to 180°. Isosceles? The base angles are equal. And if it asks for reasons, write them in words.\n\nSave this. Try Educate Me AI free · link in bio.\n\n#GCSE #GCSEMaths #Geometry #MathsTips #StudyTok",
+          "title": "Angles in a triangle, with reasons",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Angles in a triangle, with reasons",
+              "autoAddMusic": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "facebook",
+          "type": "REEL",
+          "label": "Facebook Page Reel",
+          "caption": "Angles in a triangle, with reasons. The three angles add up to 180°, so the missing angle is 180 − 52 − 71 = 57°. In an isosceles triangle the two base angles are equal, so with a top angle of 40° each base angle is (180 − 40) ÷ 2 = 70°.\n\nIf a question asks you to give reasons, write the reason in words as well as the number, like “angles in a triangle add up to 180°”.\n\nSave this for your next angles question. Try Educate Me AI free: https://www.educatemeai.co.uk/?src=facebook\n\n#GCSE #GCSEMaths #Geometry",
+          "networkData": {
+            "facebookData": {
+              "type": "REEL"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "skipped on purpose: Instagram auto-shares to the Facebook Page"
+        },
+        {
+          "network": "youtube",
+          "type": "short",
+          "label": "YouTube Shorts",
+          "caption": "Angles in a triangle add to 180°. Isosceles? The base angles are equal. And if it asks for reasons, write them in words.\n\nSave this. Try Educate Me AI free: https://www.educatemeai.co.uk/?src=youtube\n\n#GCSE #GCSEMaths #Geometry #Shorts",
+          "title": "Angles in a triangle, with reasons",
+          "networkData": {
+            "youtubeData": {
+              "title": "Angles in a triangle, with reasons",
+              "type": "short",
+              "privacy": "public",
+              "madeForKids": false,
+              "category": "EDUCATION"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "pending connection"
+        }
+      ]
+    },
+    {
+      "id": "2027-01-30-sat-show-your-working-3-pythagoras",
+      "title": "Pythagoras: two traps to dodge",
+      "when": "Sat 30 Jan 2027, 9am (proposed)",
+      "dateTime": "2027-01-30T09:00",
+      "timezone": "Europe/London",
+      "format": "reel",
+      "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2027-01-16/v3/2027-01-30-sat-show-your-working-3-pythagoras/cover.jpg",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2027-01-16/v3/2027-01-30-sat-show-your-working-3-pythagoras/reel.mp4"
+      ],
+      "altText": [
+        "Short animated video with on-screen captions. Handwriting appears on squared paper as if written by a cartoon pen, with Em’s three coloured circles in the top corner. Opens with the title ‘Pythagoras: two traps to dodge’. Two right-angled triangles are drawn: one with shorter sides 6 cm and 8 cm and the longest side x; one with longest side 13 cm, a shorter side 5 cm and the other side y. Underneath: x² = 6² + 8² = 36 + 64 = 100. ‘x = 100’ is written in orange, the circles wobble with a ‘hmm’, and it is crossed out. Then x = √100 = 10 cm, ringed in green with a tick. Next, y² = 13² + 5² is started in orange, crossed out, and replaced with 13² − 5² = 169 − 25 = 144, so y = √144 = 12 cm, ticked. The circles celebrate. Ends with ‘Show every step.’, ‘Try Educate Me AI free · link in bio’ and the Educate Me AI logo."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "REEL",
+          "label": "Instagram Reel",
+          "caption": "Pythagoras, two ways. Finding the longest side (the hypotenuse)? Square the two shorter sides and add: 6² + 8² = 36 + 64 = 100. Then square root: x = √100 = 10 cm, not 100.\n\nFinding a shorter side? Subtract instead: 13² − 5² = 169 − 25 = 144, so y = √144 = 12 cm. Write every step, because working can earn marks even if the final answer slips.\n\nSave this for your next Pythagoras question. Try Educate Me AI free · link in bio.\n\n#GCSE #GCSEMaths #Pythagoras #MathsTips #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "REEL",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "video",
+          "label": "TikTok video",
+          "caption": "Pythagoras: long side? Square, add, square root. Short side? Square, subtract, square root.\n\nSave this. Try Educate Me AI free · link in bio.\n\n#GCSE #GCSEMaths #Pythagoras #MathsTips #StudyTok",
+          "title": "Pythagoras: two traps to dodge",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Pythagoras: two traps to dodge",
+              "autoAddMusic": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "facebook",
+          "type": "REEL",
+          "label": "Facebook Page Reel",
+          "caption": "Pythagoras, two ways. Finding the longest side (the hypotenuse)? Square the two shorter sides and add: 6² + 8² = 36 + 64 = 100. Then square root: x = √100 = 10 cm, not 100.\n\nFinding a shorter side? Subtract instead: 13² − 5² = 169 − 25 = 144, so y = √144 = 12 cm. Write every step, because working can earn marks even if the final answer slips.\n\nSave this for your next Pythagoras question. Try Educate Me AI free: https://www.educatemeai.co.uk/?src=facebook\n\n#GCSE #GCSEMaths #Pythagoras",
+          "networkData": {
+            "facebookData": {
+              "type": "REEL"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "skipped on purpose: Instagram auto-shares to the Facebook Page"
+        },
+        {
+          "network": "youtube",
+          "type": "short",
+          "label": "YouTube Shorts",
+          "caption": "Pythagoras: long side? Square, add, square root. Short side? Square, subtract, square root.\n\nSave this. Try Educate Me AI free: https://www.educatemeai.co.uk/?src=youtube\n\n#GCSE #GCSEMaths #Pythagoras #Shorts",
+          "title": "Pythagoras: two traps to dodge",
+          "networkData": {
+            "youtubeData": {
+              "title": "Pythagoras: two traps to dodge",
+              "type": "short",
+              "privacy": "public",
+              "madeForKids": false,
+              "category": "EDUCATION"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "pending connection"
+        }
+      ]
+    },
+    {
+      "id": "2027-02-13-sat-show-your-working-4-double-brackets",
+      "title": "Double brackets: every term counts",
+      "when": "Sat 13 Feb 2027, 9am (proposed)",
+      "dateTime": "2027-02-13T09:00",
+      "timezone": "Europe/London",
+      "format": "reel",
+      "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2027-01-16/v3/2027-02-13-sat-show-your-working-4-double-brackets/cover.jpg",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2027-01-16/v3/2027-02-13-sat-show-your-working-4-double-brackets/reel.mp4"
+      ],
+      "altText": [
+        "Short animated video with on-screen captions. Handwriting appears on squared paper as if written by a cartoon pen, with Em’s three coloured circles in the top corner. Opens with the title ‘Double brackets: every term counts’. First, (x + 3)(x + 5) = x² + 15 is written, with ‘= x² + 15’ in orange; the circles wobble with a ‘hmm’ and it is crossed out. Underneath: = x² + 5x + 3x + 15, note ‘4 terms’, then = x² + 8x + 15, ringed in green with a tick, note ‘collect like terms’. Next: (x + 4)(x − 2) = x² − 2x + 4x − 8, note ‘4 × −2 = −8’, then = x² + 2x − 8, ticked. The circles celebrate. Ends with ‘Show every step.’, ‘Try Educate Me AI free · link in bio’ and the Educate Me AI logo."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "REEL",
+          "label": "Instagram Reel",
+          "caption": "Expanding double brackets. (x + 3)(x + 5) is not x² + 15. Multiply every term in the first bracket by every term in the second: x² + 5x + 3x + 15. Then collect like terms: x² + 8x + 15.\n\nWatch the signs: (x + 4)(x − 2) = x² − 2x + 4x − 8 = x² + 2x − 8. Write every step, because working can earn marks even if the final answer slips.\n\nSave this for your next algebra question. Try Educate Me AI free · link in bio.\n\n#GCSE #GCSEMaths #Algebra #MathsTips #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "REEL",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "video",
+          "label": "TikTok video",
+          "caption": "Double brackets: four terms, then collect like terms. Watch the signs.\n\nSave this. Try Educate Me AI free · link in bio.\n\n#GCSE #GCSEMaths #Algebra #MathsTips #StudyTok",
+          "title": "Double brackets: every term counts",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Double brackets: every term counts",
+              "autoAddMusic": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "facebook",
+          "type": "REEL",
+          "label": "Facebook Page Reel",
+          "caption": "Expanding double brackets. (x + 3)(x + 5) is not x² + 15. Multiply every term in the first bracket by every term in the second: x² + 5x + 3x + 15. Then collect like terms: x² + 8x + 15.\n\nWatch the signs: (x + 4)(x − 2) = x² − 2x + 4x − 8 = x² + 2x − 8. Write every step, because working can earn marks even if the final answer slips.\n\nSave this for your next algebra question. Try Educate Me AI free: https://www.educatemeai.co.uk/?src=facebook\n\n#GCSE #GCSEMaths #Algebra",
+          "networkData": {
+            "facebookData": {
+              "type": "REEL"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "skipped on purpose: Instagram auto-shares to the Facebook Page"
+        },
+        {
+          "network": "youtube",
+          "type": "short",
+          "label": "YouTube Shorts",
+          "caption": "Double brackets: four terms, then collect like terms. Watch the signs.\n\nSave this. Try Educate Me AI free: https://www.educatemeai.co.uk/?src=youtube\n\n#GCSE #GCSEMaths #Algebra #Shorts",
+          "title": "Double brackets: every term counts",
+          "networkData": {
+            "youtubeData": {
+              "title": "Double brackets: every term counts",
+              "type": "short",
+              "privacy": "public",
+              "madeForKids": false,
+              "category": "EDUCATION"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "pending connection"
+        }
+      ]
+    }
+  ]
+}
