@@ -1,0 +1,229 @@
+{
+  "batch": "2026-11-03",
+  "version": 3,
+  "approvalPhrase": "approve batch 2026-11-03 v3",
+  "brandId": "7636342",
+  "timezone": "Europe/London",
+  "instructions": [
+    "Schedule nothing until Rej says \"approve batch 2026-11-03 v3\" in chat. Any other version or wording is not approval.",
+    "Call getScheduledPosts for the whole date range first. If a post with the same date, time and network is already scheduled, do not schedule it again: tell Rej.",
+    "One Metricool post per network (one provider each), using that network's caption, title and networkData exactly as given. Media and altText are the same for every network.",
+    "Only platforms with status \"schedule\" (and check getBrandSettings networksData). \"pending connection\" (YouTube until it is connected) and \"skipped on purpose\" (Facebook: Instagram auto-shares) are not scheduled; list them for Rej.",
+    "Skip any post with doNotSchedule true.",
+    "Metricool plan: Free, 20 published posts a month counted per network. A post with planGate is scheduled only once Rej has said in chat that the Starter upgrade is done; until then tell Rej it is waiting on that.",
+    "Reels: media is the MP4 (soundtrack built in); use cover as videoThumbnailUrl. Instagram carousels stay silent; TikTok photo carousels have autoAddMusic true.",
+    "Times are UK local (Europe/London). Never change a date, time or caption without Rej asking.",
+    "After scheduling, confirm in chat with the Metricool ids. Claude Code logs them at the start of its next session (no email)."
+  ],
+  "posts": [
+    {
+      "id": "2026-11-03-tue-gcse-english-language-dates",
+      "title": "Your 2027 GCSE English Language exam dates",
+      "when": "Tue 3 Nov 2026, 4:30pm",
+      "dateTime": "2026-11-03T16:30",
+      "timezone": "Europe/London",
+      "format": "carousel",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-03-tue-gcse-english-language-dates/slide-01.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-03-tue-gcse-english-language-dates/slide-02.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-03-tue-gcse-english-language-dates/slide-03.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-03-tue-gcse-english-language-dates/slide-04.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-03-tue-gcse-english-language-dates/slide-05.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-03-tue-gcse-english-language-dates/slide-06.jpg"
+      ],
+      "altText": [
+        "Navy slide with Educate Me AI logo. Text: Your 2027 GCSE English Language exam dates. AQA, Edexcel, OCR and Eduqas. Save this.",
+        "Two date cards: Paper 1, Monday 24 May, morning. Paper 2, Tuesday 8 June, morning. Same dates on all four boards. Some boards call them Component 1 and 2.",
+        "How long is each paper? AQA: 1 hour 45 minutes each. OCR: 2 hours each. Edexcel (1EN0): 1 hour 45 minutes, then 2 hours 5 minutes. Eduqas: 1 hour 45 minutes, then 2 hours. Edexcel English Language 2.0: both papers 1 hour 55 minutes, same days.",
+        "A simple plan from now to May. 1: Now to Christmas, do one practice Paper 1 and Paper 2 and note which question cost the most marks. 2: January to Easter, one question type a week with feedback from your teacher. 3: Easter to May, timed full papers.",
+        "Before each paper. Paper 1 is fiction on AQA, Eduqas and Edexcel (1EN0), and non-fiction on OCR and Edexcel English Language 2.0. Plan your time so the writing section isn’t rushed. Read each question twice and underline what it asks.",
+        "Navy end slide with Em’s three circles in green, orange and pink. Text: Save this. Send it to your English group. Follow for a new revision plan every week."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "POST",
+          "label": "Instagram carousel",
+          "caption": "Your 2027 GCSE English Language exam dates: Paper 1 on Mon 24 May and Paper 2 on Tue 8 Jun, both in the morning. Same two days on AQA, Edexcel, OCR and Eduqas.\n\nPaper lengths differ by board, and so does what’s on Paper 1 (fiction on most, non-fiction on OCR and Edexcel 2.0), so check yours. Check your school’s timetable for start times.\n\nSave this, and send it to your English group. Join early access · link in bio.\n\n#GCSE #GCSEEnglish #GCSE2027 #Revision #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "POST",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "photo carousel",
+          "label": "TikTok photo carousel",
+          "caption": "Your 2027 GCSE English Language exam dates: Paper 1 on Mon 24 May and Paper 2 on Tue 8 Jun, both in the morning. Same two days on AQA, Edexcel, OCR and Eduqas.\n\nSave this, and send it to your English group. Join early access · link in bio.\n\n#GCSE #GCSEEnglish #GCSE2027 #Revision #StudyTok",
+          "title": "Your 2027 GCSE English Language exam dates",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Your 2027 GCSE English Language exam dates",
+              "autoAddMusic": true,
+              "photoCoverIndex": 0
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-05-thu-parents-mocks",
+      "title": "Helping with mocks, without the nagging",
+      "when": "Thu 5 Nov 2026, 5:00pm",
+      "dateTime": "2026-11-05T17:00",
+      "timezone": "Europe/London",
+      "format": "carousel",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-05-thu-parents-mocks/slide-01.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-05-thu-parents-mocks/slide-02.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-05-thu-parents-mocks/slide-03.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-05-thu-parents-mocks/slide-04.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-05-thu-parents-mocks/slide-05.jpg"
+      ],
+      "altText": [
+        "Navy slide with Educate Me AI logo. Text: For parents, mocks season. Helping with mocks, without the nagging. A few small things that tend to go down better.",
+        "In the run-up. Ask what’s coming up this week, rather than “have you revised?”. Let them choose the plan, and offer to help write it down. Keep evenings normal: meals together, downtime and a sensible bedtime.",
+        "Try saying… “What’s your plan for tonight?” instead of “Have you done any revision?”. “What went well?” instead of “What grade did you get?”. Open questions usually get more than a yes or no.",
+        "When results come back. Mocks are practice: treat the results as a to-do list, not a verdict. Ask which topics they’d like to go over. Their teacher can usually say which lost marks were about knowledge and which were about exam technique.",
+        "Navy end slide with Em’s three circles in green, orange and pink. Text: Save this for mocks week. Share it with another parent. Follow for calm, practical exam-season help."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "POST",
+          "label": "Instagram carousel",
+          "caption": "Mocks season can be a lot for the whole household. A few small things tend to help: ask what’s coming up rather than “have you revised?”, let them choose the plan, and keep evenings normal.\n\nWhen results come back, treat them as a to-do list, not a verdict. Their teacher can usually say which marks were about knowledge and which were about exam technique.\n\nSave this for mocks week, and share it with another parent. Join early access · link in bio.\n\n#Mocks #GCSE #ALevel #Parents #ExamSeason",
+          "networkData": {
+            "instagramData": {
+              "type": "POST",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "photo carousel",
+          "label": "TikTok photo carousel",
+          "caption": "Helping with mocks, without the nagging: ask what’s coming up, let them choose the plan, keep evenings normal. Results are a to-do list, not a verdict.\n\nSave this for mocks week, and share it with another parent. Join early access · link in bio.\n\n#Mocks #GCSE #ALevel #Parents #ExamSeason",
+          "title": "Helping with mocks, without the nagging",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Helping with mocks, without the nagging",
+              "autoAddMusic": true,
+              "photoCoverIndex": 0
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "facebook",
+          "type": "POST",
+          "label": "Facebook Page photo post",
+          "caption": "Mocks season can be a lot for the whole household. A few small things tend to help: ask what’s coming up rather than “have you revised?”, let them choose the plan, and keep evenings normal.\n\nWhen results come back, treat them as a to-do list, not a verdict. Their teacher can usually say which marks were about knowledge and which were about exam technique.\n\nSave this for mocks week, and share it with another parent. Join early access: https://www.educatemeai.co.uk/early-access?src=facebook\n\n#Mocks #GCSE #ALevel",
+          "networkData": {
+            "facebookData": {
+              "type": "POST"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "skipped on purpose: Instagram auto-shares to the Facebook Page"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-07-sat-blurting-reel",
+      "title": "Blurting in 10 minutes",
+      "when": "Sat 7 Nov 2026, 9am",
+      "dateTime": "2026-11-07T09:00",
+      "timezone": "Europe/London",
+      "format": "reel",
+      "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-07-sat-blurting-reel/cover.jpg",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-03/v3/2026-11-07-sat-blurting-reel/reel.mp4"
+      ],
+      "altText": [
+        "Short video with on-screen captions. Over the opening title 'Blurting in 10 minutes. 5 minutes to write. 5 to check.', a blank blurt sheet titled 'The water cycle' fills with five points written from memory while a 'Write · 5 min' timer runs. A 'Your notes' card with a 'Check · 5 min' timer ticks them off, shows three missed terms (transpiration, infiltration, groundwater), and those are added to the sheet in green. Ends with 'Save this and try it tonight.' and the Educate Me AI logo."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "REEL",
+          "label": "Instagram Reel",
+          "caption": "Blurting takes 10 minutes: pick one small topic, close your notes and spend 5 minutes writing everything you remember. Then spend 5 minutes checking against your notes and adding what you missed in a different colour.\n\nThe new colour is your revision list for tomorrow. Small topics work best: 'the water cycle', not 'all of geography'.\n\nSave this and try it tonight. Join early access · link in bio.\n\n#GCSE #ALevel #Revision #StudyTips #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "REEL",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "video",
+          "label": "TikTok video",
+          "caption": "Blurting takes 10 minutes: pick one small topic, close your notes and spend 5 minutes writing everything you remember. Then spend 5 minutes checking against your notes and adding what you missed in a different colour.\n\nSave this and try it tonight. Join early access · link in bio.\n\n#GCSE #ALevel #Revision #StudyTips #StudyTok",
+          "title": "Blurting in 10 minutes",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Blurting in 10 minutes",
+              "autoAddMusic": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "facebook",
+          "type": "REEL",
+          "label": "Facebook Page Reel",
+          "caption": "Blurting takes 10 minutes: pick one small topic, close your notes and spend 5 minutes writing everything you remember. Then spend 5 minutes checking against your notes and adding what you missed in a different colour.\n\nThe new colour is your revision list for tomorrow. Small topics work best: 'the water cycle', not 'all of geography'.\n\nSave this and try it tonight. Join early access: https://www.educatemeai.co.uk/early-access?src=facebook\n\n#GCSE #ALevel #Revision",
+          "networkData": {
+            "facebookData": {
+              "type": "REEL"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "skipped on purpose: Instagram auto-shares to the Facebook Page"
+        },
+        {
+          "network": "youtube",
+          "type": "short",
+          "label": "YouTube Shorts",
+          "caption": "Blurting takes 10 minutes: pick one small topic, close your notes and spend 5 minutes writing everything you remember. Then spend 5 minutes checking against your notes and adding what you missed in a different colour.\n\nSave this and try it tonight. Join early access: https://www.educatemeai.co.uk/early-access?src=youtube\n\n#GCSE #ALevel #Revision #Shorts",
+          "title": "Blurting in 10 minutes",
+          "networkData": {
+            "youtubeData": {
+              "title": "Blurting in 10 minutes",
+              "type": "short",
+              "privacy": "public",
+              "madeForKids": false,
+              "category": "EDUCATION"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "pending connection"
+        }
+      ]
+    }
+  ]
+}
