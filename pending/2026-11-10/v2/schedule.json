@@ -1,0 +1,239 @@
+{
+  "batch": "2026-11-10",
+  "version": 2,
+  "approvalPhrase": "approve batch 2026-11-10 v2",
+  "brandId": "7636342",
+  "timezone": "Europe/London",
+  "instructions": [
+    "Schedule nothing until Rej says \"approve batch 2026-11-10 v2\" in chat. Any other version or wording is not approval.",
+    "Call getScheduledPosts for the whole date range first. If a post with the same date, time and network is already scheduled, do not schedule it again: tell Rej.",
+    "One Metricool post per network (one provider each), using that network's caption, title and networkData exactly as given. Media and altText are the same for every network.",
+    "Only platforms with status \"schedule\" (and check getBrandSettings networksData). \"pending connection\" (YouTube until it is connected) and \"skipped on purpose\" (Facebook: Instagram auto-shares) are not scheduled; list them for Rej.",
+    "Skip any post with doNotSchedule true.",
+    "Metricool plan: Free, 20 published posts a month counted per network. A post with planGate is scheduled only once Rej has said in chat that the Starter upgrade is done; until then tell Rej it is waiting on that.",
+    "Reels: media is the MP4 (soundtrack built in); use cover as videoThumbnailUrl. Instagram carousels stay silent; TikTok photo carousels have autoAddMusic true.",
+    "Times are UK local (Europe/London). Never change a date, time or caption without Rej asking.",
+    "After scheduling, confirm in chat with the Metricool ids. Claude Code logs them at the start of its next session (no email)."
+  ],
+  "posts": [
+    {
+      "id": "2026-11-10-tue-gcse-chemistry-dates",
+      "title": "Your 2027 GCSE Chemistry exam dates",
+      "when": "Tue 10 Nov 2026, 4:30pm",
+      "dateTime": "2026-11-10T16:30",
+      "timezone": "Europe/London",
+      "format": "carousel",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-10/v2/2026-11-10-tue-gcse-chemistry-dates/slide-01.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-10/v2/2026-11-10-tue-gcse-chemistry-dates/slide-02.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-10/v2/2026-11-10-tue-gcse-chemistry-dates/slide-03.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-10/v2/2026-11-10-tue-gcse-chemistry-dates/slide-04.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-10/v2/2026-11-10-tue-gcse-chemistry-dates/slide-05.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-10/v2/2026-11-10-tue-gcse-chemistry-dates/slide-06.jpg"
+      ],
+      "altText": [
+        "Navy slide with Educate Me AI logo. Text: Your 2027 GCSE Chemistry exam dates. Chemistry and Combined Science. AQA, Edexcel and OCR. Save this.",
+        "Two date cards: Chemistry paper 1, Monday 17 May, morning. Chemistry paper 2, Tuesday 15 June, morning. Same dates for Chemistry and Combined Science (AQA Trilogy, Edexcel, OCR Gateway). Paper numbers vary by board. Foundation and Higher are on the same day.",
+        "How long is each paper? Chemistry on all three boards: 1 hour 45 minutes each. Combined Science, AQA Trilogy: 1 hour 15 minutes each. Combined Science, Edexcel: 1 hour 10 minutes each. Combined Science, OCR Gateway: 1 hour 10 minutes each. On AQA Synergy or OCR Combined Science B, papers are split differently, so check your board's timetable.",
+        "A simple plan from now to May. 1: Now to Christmas, do one practice paper and note which topics cost the most marks. 2: January to Easter, one topic a week plus a few calculation questions every week. 3: Easter to May, timed papers, Paper 1 topics first, then Paper 2.",
+        "Before each paper. Questions on the practicals you did in class come up in the written papers, so know the method and why each step matters. In calculations, write down each step with units and check the answer looks sensible. Learn which topics are on Paper 1 and Paper 2 for your board.",
+        "Navy end slide with Em’s three circles in green, orange and pink. Text: Save this. Send it to your Chemistry group. Follow for a new revision plan every week."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "POST",
+          "label": "Instagram carousel",
+          "caption": "Your 2027 GCSE Chemistry exam dates: paper 1 on Mon 17 May and paper 2 on Tue 15 Jun, both in the morning. Same two days for Chemistry and for the Chemistry papers in Combined Science (AQA Trilogy, Edexcel and OCR Gateway).\n\nPaper lengths differ: 1h 45m for Chemistry, 1h 10m or 1h 15m for Combined Science. On AQA Synergy or OCR Combined Science B, check your board’s timetable. Check your school’s timetable for start times.\n\nSave this, and send it to your Chemistry group. Join early access · link in bio.\n\n#GCSE #GCSEChemistry #GCSEScience #GCSE2027 #Revision",
+          "networkData": {
+            "instagramData": {
+              "type": "POST",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "photo carousel",
+          "label": "TikTok photo carousel",
+          "caption": "Your 2027 GCSE Chemistry exam dates: paper 1 on Mon 17 May and paper 2 on Tue 15 Jun, both in the morning. Same two days for Chemistry and for the Chemistry papers in Combined Science (AQA Trilogy, Edexcel and OCR Gateway).\n\nSave this, and send it to your Chemistry group. Join early access · link in bio.\n\n#GCSE #GCSEChemistry #GCSEScience #GCSE2027 #Revision",
+          "title": "Your 2027 GCSE Chemistry exam dates",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Your 2027 GCSE Chemistry exam dates",
+              "autoAddMusic": true,
+              "photoCoverIndex": 0
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-thu-lock-it-in-1-osmosis",
+      "title": "Why does a raw potato chip go floppy in salty water?",
+      "when": "Thu 12 Nov 2026, 5pm",
+      "dateTime": "2026-11-12T17:00",
+      "timezone": "Europe/London",
+      "format": "reel",
+      "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-10/v2/2026-11-12-thu-lock-it-in-1-osmosis/cover.jpg",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-10/v2/2026-11-12-thu-lock-it-in-1-osmosis/reel.mp4"
+      ],
+      "altText": [
+        "Reel, Lock It In number 1, GCSE Biology, Combined and Triple Science. Question: why does a raw potato chip go floppy in salty water? A diagram shows a potato cell on the left and salty water on the right, separated by a dashed cell membrane. Water dots move across the membrane into the salty water and the cell shrinks. Text: Osmosis: water crosses a partially permeable membrane, from dilute to more concentrated. Salty water is more concentrated, so water leaves the potato cells. So the chip goes floppy and loses mass. Memory trick: water follows the salt. In pure water it's the other way round: water moves in and the chip goes firm. Ends on: Save this. Lock it in. Follow for Lock It In number 2."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "REEL",
+          "label": "Instagram Reel",
+          "caption": "Why does a raw potato chip go floppy in salty water? Osmosis. Water moves across a partially permeable membrane, from a dilute solution to a more concentrated one, so water leaves the potato cells and the chip loses mass.\n\nMemory trick: water follows the salt. In pure water it goes the other way, and the chip goes firm.\n\nSave this for your Biology revision. Lock It In #2 next week. Join early access · link in bio.\n\n#GCSE #GCSEBiology #GCSEScience #Revision #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "REEL",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "video",
+          "label": "TikTok video",
+          "caption": "Floppy raw potato chip in salty water? Osmosis: water moves out of the cells, towards the more concentrated solution. Memory trick: water follows the salt.\n\nSave this. Lock It In #2 next week. Join early access · link in bio.\n\n#GCSE #GCSEBiology #GCSEScience #Revision #StudyTok",
+          "title": "Why does a raw potato chip go floppy in salty water?",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Why does a raw potato chip go floppy in salty water?",
+              "autoAddMusic": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "facebook",
+          "type": "REEL",
+          "label": "Facebook Page Reel",
+          "caption": "Why does a raw potato chip go floppy in salty water? Osmosis. Water moves across a partially permeable membrane, from a dilute solution to a more concentrated one, so water leaves the potato cells and the chip loses mass.\n\nMemory trick: water follows the salt. In pure water it goes the other way, and the chip goes firm.\n\nSave this for your Biology revision. Lock It In #2 next week. Join early access: https://www.educatemeai.co.uk/early-access?src=facebook\n\n#GCSE #GCSEBiology #GCSEScience",
+          "networkData": {
+            "facebookData": {
+              "type": "REEL"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "skipped on purpose: Instagram auto-shares to the Facebook Page"
+        },
+        {
+          "network": "youtube",
+          "type": "short",
+          "label": "YouTube Shorts",
+          "caption": "Floppy raw potato chip in salty water? Osmosis: water moves out of the cells, towards the more concentrated solution. Memory trick: water follows the salt.\n\nSave this. Lock It In #2 next week. Join early access: https://www.educatemeai.co.uk/early-access?src=youtube\n\n#GCSE #GCSEBiology #GCSEScience #Shorts",
+          "title": "Why does a raw potato chip go floppy in salty water?",
+          "networkData": {
+            "youtubeData": {
+              "title": "Why does a raw potato chip go floppy in salty water?",
+              "type": "short",
+              "privacy": "public",
+              "madeForKids": false,
+              "category": "EDUCATION"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "pending connection"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-14-sat-working-reel",
+      "title": "Wrong answer. Still marks?",
+      "when": "Sat 14 Nov 2026, 9am (proposed: week 3's reel)",
+      "dateTime": "2026-11-14T09:00",
+      "timezone": "Europe/London",
+      "format": "reel",
+      "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-10/v2/2026-11-14-sat-working-reel/cover.jpg",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-10/v2/2026-11-14-sat-working-reel/reel.mp4"
+      ],
+      "altText": [
+        "Short video with on-screen captions. Opens with the title 'Wrong answer. Still marks?' while the question appears behind it. The question 'A coat costs £80. In a sale it's 15% off. What is the sale price?' is worked line by line. The first two lines, 10% = £8 so 5% = £4, and 15% = £8 + £4 = £12, together get a green 'Method ✓' and the mark counter rises to 1 out of 3. The last line, £80 − £12 = £58, gets a green 'Method ✓', taking the counter to 2, and a pink 'Answer ✗'. A note says it should be £68. The counter stays at 2. Ends with 'Show every step.' and the Educate Me AI logo."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "REEL",
+          "label": "Instagram Reel",
+          "caption": "A wrong final answer doesn't always mean zero. If your working is on the page, correct method can still pick up marks.\n\nHere, finding 15% (£12) earns a method mark, and subtracting it from £80 earns another. The subtraction slips (£58, not £68), so only the answer mark is lost: 2 of the 3 example marks. With just '£58' written down, there'd be nothing to give marks for.\n\nSave this for your next practice paper. Join early access · link in bio.\n\n#GCSE #GCSEMaths #Revision #MathsTips #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "REEL",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "video",
+          "label": "TikTok video",
+          "caption": "A wrong final answer doesn't always mean zero. If your working is on the page, correct method can still pick up marks.\n\nSave this for your next practice paper. Join early access · link in bio.\n\n#GCSE #GCSEMaths #Revision #MathsTips #StudyTok",
+          "title": "Wrong answer. Still marks?",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Wrong answer. Still marks?",
+              "autoAddMusic": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "facebook",
+          "type": "REEL",
+          "label": "Facebook Page Reel",
+          "caption": "A wrong final answer doesn't always mean zero. If your working is on the page, correct method can still pick up marks.\n\nHere, finding 15% (£12) earns a method mark, and subtracting it from £80 earns another. The subtraction slips (£58, not £68), so only the answer mark is lost: 2 of the 3 example marks. With just '£58' written down, there'd be nothing to give marks for.\n\nSave this for your next practice paper. Join early access: https://www.educatemeai.co.uk/early-access?src=facebook\n\n#GCSE #GCSEMaths #Revision",
+          "networkData": {
+            "facebookData": {
+              "type": "REEL"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "skipped on purpose: Instagram auto-shares to the Facebook Page"
+        },
+        {
+          "network": "youtube",
+          "type": "short",
+          "label": "YouTube Shorts",
+          "caption": "A wrong final answer doesn't always mean zero. If your working is on the page, correct method can still pick up marks.\n\nSave this for your next practice paper. Join early access: https://www.educatemeai.co.uk/early-access?src=youtube\n\n#GCSE #GCSEMaths #Revision #Shorts",
+          "title": "Wrong answer. Still marks?",
+          "networkData": {
+            "youtubeData": {
+              "title": "Wrong answer. Still marks?",
+              "type": "short",
+              "privacy": "public",
+              "madeForKids": false,
+              "category": "EDUCATION"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "pending connection"
+        }
+      ]
+    }
+  ]
+}
