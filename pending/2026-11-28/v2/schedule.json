@@ -1,0 +1,100 @@
+{
+  "batch": "2026-11-28",
+  "version": 2,
+  "approvalPhrase": "approve batch 2026-11-28 v2",
+  "brandId": "7636342",
+  "timezone": "Europe/London",
+  "instructions": [
+    "Schedule nothing until Rej says \"approve batch 2026-11-28 v2\" in chat. Any other version or wording is not approval.",
+    "Call getScheduledPosts for the whole date range first. If a post with the same date, time and network is already scheduled, do not schedule it again: tell Rej.",
+    "One Metricool post per network (one provider each), using that network's caption, title and networkData exactly as given. Media and altText are the same for every network.",
+    "Only platforms with status \"schedule\" (and check getBrandSettings networksData). \"pending connection\" (YouTube until it is connected) and \"skipped on purpose\" (Facebook: Instagram auto-shares) are not scheduled; list them for Rej.",
+    "Skip any post with doNotSchedule true.",
+    "Metricool plan: Free, 20 published posts a month counted per network. A post with planGate is scheduled only once Rej has said in chat that the Starter upgrade is done; until then tell Rej it is waiting on that.",
+    "Reels: media is the MP4 (soundtrack built in); use cover as videoThumbnailUrl. Instagram carousels stay silent; TikTok photo carousels have autoAddMusic true.",
+    "Times are UK local (Europe/London). Never change a date, time or caption without Rej asking.",
+    "After scheduling, confirm in chat with the Metricool ids. Claude Code logs them at the start of its next session (no email)."
+  ],
+  "posts": [
+    {
+      "id": "2026-11-28-sat-show-your-working-1-fractions",
+      "title": "Fractions: all four, step by step",
+      "when": "Sat 28 Nov 2026, 9am (proposed: week 5)",
+      "dateTime": "2026-11-28T09:00",
+      "timezone": "Europe/London",
+      "format": "reel",
+      "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-28/v2/2026-11-28-sat-show-your-working-1-fractions/cover.jpg",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-28/v2/2026-11-28-sat-show-your-working-1-fractions/reel.mp4"
+      ],
+      "altText": [
+        "Short animated video with on-screen captions. Handwriting appears on squared paper as if written by a cartoon pen, with Em’s three coloured circles in the top corner. Opens with the title ‘Fractions: all four, step by step’. First, 1/3 + 1/4 = 2/7 is written in orange, the circles wobble with a ‘hmm’, and 2/7 is crossed out. Underneath: = 4/12 + 3/12 = 7/12, ringed in green with a tick. Next: 5/6 − 1/3 = 5/6 − 2/6 = 3/6 = 1/2, ticked, with the note ‘÷3 top and bottom’. Then 2/3 × 3/5 = 6/15 = 2/5, ticked, note ‘÷3’. Then 3/4 ÷ 1/2 = 3/4 × 2/1, note ‘flip the 2nd’, then = 6/4 = 3/2, ticked, note ‘or 1½’. The circles celebrate. Ends with ‘Show every step.’ and the Educate Me AI logo."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "REEL",
+          "label": "Instagram Reel",
+          "caption": "Fractions, all four ways. Adding or subtracting: make the bottoms the same first (1/3 + 1/4 is 4/12 + 3/12 = 7/12, not 2/7). Multiplying: top × top, bottom × bottom. Dividing: keep the first fraction, change ÷ to ×, flip the second.\n\nThen simplify: 3/6 is 1/2, 6/15 is 2/5. Write every step, because working can earn marks even if the final answer slips.\n\nSave this for your next fractions question, and follow for more Show Your Working.\n\n#GCSE #GCSEMaths #Fractions #MathsTips #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "REEL",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "video",
+          "label": "TikTok video",
+          "caption": "Fractions, all four ways. Add and subtract: same bottoms first. Multiply: straight across. Divide: keep, change, flip. Then simplify.\n\nSave this and follow for more Show Your Working.\n\n#GCSE #GCSEMaths #Fractions #MathsTips #StudyTok",
+          "title": "Fractions: all four, step by step",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Fractions: all four, step by step",
+              "autoAddMusic": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "facebook",
+          "type": "REEL",
+          "label": "Facebook Page Reel",
+          "caption": "Fractions, all four ways. Adding or subtracting: make the bottoms the same first (1/3 + 1/4 is 4/12 + 3/12 = 7/12, not 2/7). Multiplying: top × top, bottom × bottom. Dividing: keep the first fraction, change ÷ to ×, flip the second.\n\nThen simplify: 3/6 is 1/2, 6/15 is 2/5. Write every step, because working can earn marks even if the final answer slips.\n\nSave this for your next fractions question, and follow for more Show Your Working.\n\n#GCSE #GCSEMaths #Fractions",
+          "networkData": {
+            "facebookData": {
+              "type": "REEL"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "skipped on purpose: Instagram auto-shares to the Facebook Page"
+        },
+        {
+          "network": "youtube",
+          "type": "short",
+          "label": "YouTube Shorts",
+          "caption": "Fractions, all four ways. Add and subtract: same bottoms first. Multiply: straight across. Divide: keep, change, flip. Then simplify.\n\nSave this and follow for more Show Your Working.\n\n#GCSE #GCSEMaths #Fractions #Shorts",
+          "title": "Fractions: all four, step by step",
+          "networkData": {
+            "youtubeData": {
+              "title": "Fractions: all four, step by step",
+              "type": "short",
+              "privacy": "public",
+              "madeForKids": false,
+              "category": "EDUCATION"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "pending connection"
+        }
+      ]
+    }
+  ]
+}
