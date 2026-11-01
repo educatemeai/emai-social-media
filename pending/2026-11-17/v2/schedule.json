@@ -1,0 +1,229 @@
+{
+  "batch": "2026-11-17",
+  "version": 2,
+  "approvalPhrase": "approve batch 2026-11-17 v2",
+  "brandId": "7636342",
+  "timezone": "Europe/London",
+  "instructions": [
+    "Schedule nothing until Rej says \"approve batch 2026-11-17 v2\" in chat. Any other version or wording is not approval.",
+    "Call getScheduledPosts for the whole date range first. If a post with the same date, time and network is already scheduled, do not schedule it again: tell Rej.",
+    "One Metricool post per network (one provider each), using that network's caption, title and networkData exactly as given. Media and altText are the same for every network.",
+    "Only platforms with status \"schedule\" (and check getBrandSettings networksData). \"pending connection\" (YouTube until it is connected) and \"skipped on purpose\" (Facebook: Instagram auto-shares) are not scheduled; list them for Rej.",
+    "Skip any post with doNotSchedule true.",
+    "Metricool plan: Free, 20 published posts a month counted per network. A post with planGate is scheduled only once Rej has said in chat that the Starter upgrade is done; until then tell Rej it is waiting on that.",
+    "Reels: media is the MP4 (soundtrack built in); use cover as videoThumbnailUrl. Instagram carousels stay silent; TikTok photo carousels have autoAddMusic true.",
+    "Times are UK local (Europe/London). Never change a date, time or caption without Rej asking.",
+    "After scheduling, confirm in chat with the Metricool ids. Claude Code logs them at the start of its next session (no email)."
+  ],
+  "posts": [
+    {
+      "id": "2026-11-17-tue-gcse-english-literature-board-differences",
+      "title": "Same two days. Different papers.",
+      "when": "Tue 17 Nov 2026, 4:30pm",
+      "dateTime": "2026-11-17T16:30",
+      "timezone": "Europe/London",
+      "format": "carousel",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-17-tue-gcse-english-literature-board-differences/slide-01.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-17-tue-gcse-english-literature-board-differences/slide-02.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-17-tue-gcse-english-literature-board-differences/slide-03.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-17-tue-gcse-english-literature-board-differences/slide-04.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-17-tue-gcse-english-literature-board-differences/slide-05.jpg"
+      ],
+      "altText": [
+        "Navy slide with Educate Me AI logo. Text: Same two days. Different papers. AQA, Edexcel, OCR and Eduqas: how English Literature differs by board. Save this.",
+        "Two date cards: Paper 1, Wednesday 12 May, morning. Paper 2, Wednesday 19 May, morning. Same dates on all four boards. Some boards call them Component 1 and 2.",
+        "Each board’s papers. AQA: 1 hour 45 minutes, then 2 hours 15 minutes; Paper 1 Shakespeare and the 19th-century novel, Paper 2 modern texts and poetry. Edexcel: 1 hour 45 minutes, then 2 hours 15 minutes; Paper 1 Shakespeare and a post-1914 text, Paper 2 19th-century novel and poetry. OCR: 2 hours each; Paper 1 modern and literary heritage texts, Paper 2 poetry and Shakespeare. Eduqas: 2 hours, then 2 hours 30 minutes; Component 1 Shakespeare and poetry, Component 2 post-1914 text, 19th-century prose and unseen poetry.",
+        "Closed book on every board: you can't take your texts into the exam. Learn short quotes you can use in more than one answer. Write down which of your texts is on which paper. Check your set texts with your teacher, because schools choose different ones.",
+        "Navy end slide with Em's three circles in green, orange and pink. Text: Save this. Send it to your English group. Follow for a new revision plan every week."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "POST",
+          "label": "Instagram carousel",
+          "caption": "GCSE English Literature 2027: Paper 1 is on Wed 12 May and Paper 2 on Wed 19 May, both in the morning, on AQA, Edexcel, OCR and Eduqas.\n\nPaper lengths differ by board: AQA and Edexcel are 1h 45m then 2h 15m, OCR is 2h each, and Eduqas is 2h then 2h 30m. Every board is closed book, so you can’t take your texts in. Check your set texts with your teacher, and your school’s timetable for start times.\n\nSave this, and send it to your English group. Join early access · link in bio.\n\n#GCSE #GCSEEnglish #EnglishLiterature #GCSE2027 #Revision #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "POST",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "photo carousel",
+          "label": "TikTok photo carousel",
+          "caption": "GCSE English Literature 2027: Paper 1 is on Wed 12 May and Paper 2 on Wed 19 May, both in the morning, on AQA, Edexcel, OCR and Eduqas.\n\nSave this, and send it to your English group. Join early access · link in bio.\n\n#GCSE #GCSEEnglish #EnglishLiterature #GCSE2027 #Revision #StudyTok",
+          "title": "Same two days. Different papers.",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Same two days. Different papers.",
+              "autoAddMusic": true,
+              "photoCoverIndex": 0
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-19-thu-lock-it-in-2-percentages",
+      "title": "Up 10%, then down 10%. Back where you started?",
+      "when": "Thu 19 Nov 2026, 5pm",
+      "dateTime": "2026-11-19T17:00",
+      "timezone": "Europe/London",
+      "format": "reel",
+      "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-19-thu-lock-it-in-2-percentages/cover.jpg",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-19-thu-lock-it-in-2-percentages/reel.mp4"
+      ],
+      "altText": [
+        "Reel, Lock It In number 2, GCSE Maths, Percentages. Question: up 10%, then down 10%. Back where you started? A bar fills from £100 on the left to £99 on the right, with two labels: Up 10% (£10): £110, then Down 10% of £110 (£11): £99. A note says it is not £100, it is 1% lower. Text: Up 10% means times 1.1. Down 10% means times 0.9. 1.1 times 0.9 equals 0.99, so you finish on 99% of the start. The second 10% is taken from the new, bigger amount. Memory trick: percent of what? Each change uses the latest amount, so the two don't cancel out. Ends on: Save this. Lock it in. Follow for Lock It In number 3."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "REEL",
+          "label": "Instagram Reel",
+          "caption": "Up 10%, then down 10%. Are you back where you started? No. Take £100: up 10% is £110, then down 10% of £110 is £11 off, so £99. As multipliers: × 1.1 × 0.9 = 0.99.\n\nMemory trick: percent of what? Each change uses the latest amount, so the two don’t cancel out.\n\nSave this for your Maths revision. Lock It In #3 next week. Join early access · link in bio.\n\n#GCSE #GCSEMaths #Maths #Revision #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "REEL",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "video",
+          "label": "TikTok video",
+          "caption": "Up 10%, then down 10%. Back where you started? No: £100 → £110 → £99. × 1.1 × 0.9 = 0.99. Memory trick: percent of what?\n\nSave this. Lock It In #3 next week. Join early access · link in bio.\n\n#GCSE #GCSEMaths #Maths #Revision #StudyTok",
+          "title": "Up 10%, then down 10%. Back where you started?",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Up 10%, then down 10%. Back where you started?",
+              "autoAddMusic": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "facebook",
+          "type": "REEL",
+          "label": "Facebook Page Reel",
+          "caption": "Up 10%, then down 10%. Are you back where you started? No. Take £100: up 10% is £110, then down 10% of £110 is £11 off, so £99. As multipliers: × 1.1 × 0.9 = 0.99.\n\nMemory trick: percent of what? Each change uses the latest amount, so the two don’t cancel out.\n\nSave this for your Maths revision. Lock It In #3 next week. Join early access: https://www.educatemeai.co.uk/early-access?src=facebook\n\n#GCSE #GCSEMaths #Maths",
+          "networkData": {
+            "facebookData": {
+              "type": "REEL"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "skipped on purpose: Instagram auto-shares to the Facebook Page"
+        },
+        {
+          "network": "youtube",
+          "type": "short",
+          "label": "YouTube Shorts",
+          "caption": "Up 10%, then down 10%. Back where you started? No: £100 → £110 → £99. × 1.1 × 0.9 = 0.99. Memory trick: percent of what?\n\nSave this. Lock It In #3 next week. Join early access: https://www.educatemeai.co.uk/early-access?src=youtube\n\n#GCSE #GCSEMaths #Maths #Shorts",
+          "title": "Up 10%, then down 10%. Back where you started?",
+          "networkData": {
+            "youtubeData": {
+              "title": "Up 10%, then down 10%. Back where you started?",
+              "type": "short",
+              "privacy": "public",
+              "madeForKids": false,
+              "category": "EDUCATION"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "pending connection"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-21-sat-igcse-or-gcse-whats-different",
+      "title": "IGCSE or GCSE? How the exams are set up",
+      "when": "Sat 21 Nov 2026, 9am",
+      "dateTime": "2026-11-21T09:00",
+      "timezone": "Europe/London",
+      "format": "carousel",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-21-sat-igcse-or-gcse-whats-different/slide-01.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-21-sat-igcse-or-gcse-whats-different/slide-02.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-21-sat-igcse-or-gcse-whats-different/slide-03.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-21-sat-igcse-or-gcse-whats-different/slide-04.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-21-sat-igcse-or-gcse-whats-different/slide-05.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-17/v2/2026-11-21-sat-igcse-or-gcse-whats-different/slide-06.jpg"
+      ],
+      "altText": [
+        "Navy slide with Educate Me AI logo. Text: IGCSE or GCSE? How the exams are set up. Cambridge IGCSE, Pearson Edexcel International GCSE and GCSE, with Maths as the example.",
+        "Tiers, Maths for exams in 2027. Cambridge IGCSE Maths 0580: Core or Extended. Edexcel International GCSE Maths A 4MA1: Foundation or Higher. GCSE Maths in England: Foundation or Higher. Not every subject has tiers; check your own specification.",
+        "How many papers? Cambridge IGCSE 0580: 2 papers, one without a calculator and one with. Edexcel International GCSE 4MA1: 2 papers, calculator allowed on both. GCSE on AQA, Edexcel and OCR: 3 papers, one without a calculator and two with. No coursework in Maths on any of them.",
+        "When can you sit them, for exams in 2027? Cambridge IGCSE: June and November, also March in India only. Edexcel International GCSE: May/June and November, with November for selected subjects. GCSE in England: May/June, and November too for English Language and Maths if you're 16 or over on 31 August.",
+        "Which one are you taking? Your exam entry says GCSE or International GCSE, and names the board. Each course has a code, like 0580, 4MA1 or 8300; revise from that specification. Other subjects are set up differently, so check your own specification.",
+        "Navy end slide with Em's three circles in green, orange and pink. Text: Save this. Send it to a friend or parent. Follow for a new revision plan every week."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "POST",
+          "label": "Instagram carousel",
+          "caption": "IGCSE or GCSE? They’re different qualifications, and the exams are set up differently. Here’s Maths for exams in 2027 as an example.\n\nCambridge IGCSE Maths has Core and Extended tiers and 2 papers (one without a calculator). Pearson Edexcel International GCSE Maths A has Foundation and Higher and 2 papers, calculator on both. GCSE Maths from AQA, Edexcel and OCR has Foundation and Higher and 3 papers, one without a calculator. None has coursework. Cambridge IGCSE sits in June and November, Edexcel International GCSE in May/June and November (selected subjects), and GCSE in May/June, with November for English Language and Maths if you’re 16+ on 31 August. Pearson’s last January International GCSE series was January 2023.\n\nOther subjects differ, so check your own specification. Save this, and send it to a friend or parent. Join early access · link in bio.\n\n#IGCSE #GCSE #GCSEMaths #Revision #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "POST",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "photo carousel",
+          "label": "TikTok photo carousel",
+          "caption": "IGCSE or GCSE? They’re different qualifications, and the exams are set up differently. Here’s Maths for exams in 2027 as an example.\n\nOther subjects differ, so check your own specification. Save this, and send it to a friend or parent. Join early access · link in bio.\n\n#IGCSE #GCSE #GCSEMaths #Revision #StudyTok",
+          "title": "IGCSE or GCSE? How the exams are set up",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "IGCSE or GCSE? How the exams are set up",
+              "autoAddMusic": true,
+              "photoCoverIndex": 0
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "facebook",
+          "type": "POST",
+          "label": "Facebook Page photo post",
+          "caption": "IGCSE or GCSE? They’re different qualifications, and the exams are set up differently. Here’s Maths for exams in 2027 as an example.\n\nCambridge IGCSE Maths has Core and Extended tiers and 2 papers (one without a calculator). Pearson Edexcel International GCSE Maths A has Foundation and Higher and 2 papers, calculator on both. GCSE Maths from AQA, Edexcel and OCR has Foundation and Higher and 3 papers, one without a calculator. None has coursework. Cambridge IGCSE sits in June and November, Edexcel International GCSE in May/June and November (selected subjects), and GCSE in May/June, with November for English Language and Maths if you’re 16+ on 31 August. Pearson’s last January International GCSE series was January 2023.\n\nOther subjects differ, so check your own specification. Save this, and send it to a friend or parent. Join early access: https://www.educatemeai.co.uk/early-access?src=facebook\n\n#IGCSE #GCSE #GCSEMaths",
+          "networkData": {
+            "facebookData": {
+              "type": "POST"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "skipped on purpose: Instagram auto-shares to the Facebook Page"
+        }
+      ]
+    }
+  ]
+}
