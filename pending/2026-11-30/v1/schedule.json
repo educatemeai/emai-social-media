@@ -1,0 +1,107 @@
+{
+  "batch": "2026-11-30",
+  "version": 1,
+  "approvalPhrase": "approve batch 2026-11-30 v1",
+  "brandId": "7636342",
+  "timezone": "Europe/London",
+  "instructions": [
+    "Schedule nothing until Rej says \"approve batch 2026-11-30 v1\" in chat. Any other version or wording is not approval.",
+    "Call getScheduledPosts for the whole date range first. If a post with the same date, time and network is already scheduled, do not schedule it again: tell Rej.",
+    "One Metricool post per network (one provider each), using that network's caption, title and networkData exactly as given. Media, cover and altText are the post's, unless the platform has its own (Question of the day: the slides on Instagram, the reel version on TikTok and YouTube Shorts); then use the platform's.",
+    "Only platforms with status \"schedule\" (and check getBrandSettings networksData). \"pending connection\" (YouTube until it is connected) and \"skipped on purpose\" (Facebook: Instagram auto-shares) are not scheduled; list them for Rej.",
+    "Skip any post with doNotSchedule true.",
+    "Metricool plan: Free, 20 published posts a month in one total across networks (each network's post counts once). A post with planGate is scheduled only once Rej has said in chat that the Starter upgrade is done; until then tell Rej it is waiting on that.",
+    "AI labels: networkData sets them per post (instagramData.isAiGenerated, tiktokData.isAigc, youtubeData.isAiGeneratedContent); send them exactly as given. A post with pinAfterPosting: remind Rej to pin it once it is live.",
+    "Reels: media is the MP4 (soundtrack built in); use cover as videoThumbnailUrl. Instagram carousels stay silent; TikTok photo carousels have autoAddMusic true.",
+    "Times are UK local (Europe/London). Never change a date, time or caption without Rej asking.",
+    "After scheduling, confirm in chat with the Metricool ids. Claude Code logs them at the start of its next session (no email)."
+  ],
+  "posts": [
+    {
+      "id": "2026-12-06-sun-qotd-1-ratio",
+      "title": "2026-12-06-sun-qotd-1-ratio",
+      "when": "Sun 6 Dec 2026, 6pm",
+      "dateTime": "2026-12-06T18:00",
+      "timezone": "Europe/London",
+      "format": "carousel + reel",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v1/2026-12-06-sun-qotd-1-ratio/slide-01.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v1/2026-12-06-sun-qotd-1-ratio/slide-02.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v1/2026-12-06-sun-qotd-1-ratio/slide-03.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v1/2026-12-06-sun-qotd-1-ratio/slide-04.jpg"
+      ],
+      "altText": [
+        "Navy slide. Question of the day. GCSE Maths, AQA, Edexcel and OCR, Foundation and Higher, Ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class? Original practice question by Educate Me AI, not from a past paper.",
+        "Have a go first. Comment your answer, then swipe to check. Hint: which number in the ratio does the 15 go with?",
+        "The answer: 40 students. How marks are usually given: 1 mark for one part, 15 divided by 3 equals 5; 1 mark for counting the parts, 3 plus 5 equals 8, or 5 times 5 equals 25 who don’t walk; 1 mark for 8 times 5 equals 40, or 15 plus 25 equals 40. The 15 is one share, not the whole class, so don’t start with 15 divided by 8.",
+        "Navy end slide with Em's three circles. How did you get on? Join early access, link in bio. Follow for a new question every week."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "POST",
+          "label": "Instagram carousel",
+          "caption": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Foundation and Higher, ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class?\n\nHave a go, comment your answer, then swipe. The answer and how marks are usually given are on slide 3.\n\nOriginal practice question by Educate Me AI, not from a past paper.\n\nAnswer in the comments · Join early access, link in bio.\n\n#GCSEMaths #GCSE #Ratio #MathsRevision #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "POST",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "video",
+          "label": "TikTok video",
+          "caption": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Foundation and Higher, ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class? Pause, try it, and comment your answer.\n\nOriginal practice question by Educate Me AI, not from a past paper.\n\nAnswer in the comments · Join early access, link in bio.\n\n#GCSEMaths #GCSE #Ratio #MathsRevision #StudyTok",
+          "title": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Ratio (3 marks)",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Ratio (3 marks)",
+              "autoAddMusic": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule",
+          "media": [
+            "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v1/2026-12-06-sun-qotd-1-ratio/reel.mp4"
+          ],
+          "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v1/2026-12-06-sun-qotd-1-ratio/cover.jpg",
+          "altText": [
+            "Reel. Question of the day. GCSE Maths, AQA, Edexcel and OCR, Foundation and Higher, Ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class? Original practice question by Educate Me AI, not from a past paper. Then: Pause, try it, and comment your answer, for 3 seconds with a bar, and the hint: which number in the ratio does the 15 go with? Then the answer, 40 students, and How marks are usually given, for the 3 marks: one part is 15 divided by 3, which is 5; 8 parts in total; 8 times 5 is 40. Ends on: How did you get on? Join early access, link in bio."
+          ]
+        },
+        {
+          "network": "youtube",
+          "type": "short",
+          "label": "YouTube Shorts",
+          "caption": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Foundation and Higher, ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class? Pause, try it, and comment your answer.\n\nOriginal practice question by Educate Me AI, not from a past paper.\n\nAnswer in the comments · Join early access: https://www.educatemeai.co.uk/early-access?src=youtube\n\n#GCSEMaths #GCSE #Ratio #Shorts",
+          "title": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Ratio (3 marks)",
+          "networkData": {
+            "youtubeData": {
+              "title": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Ratio (3 marks)",
+              "type": "short",
+              "privacy": "public",
+              "madeForKids": false,
+              "category": "EDUCATION"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "pending connection",
+          "media": [
+            "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v1/2026-12-06-sun-qotd-1-ratio/reel.mp4"
+          ],
+          "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v1/2026-12-06-sun-qotd-1-ratio/cover.jpg",
+          "altText": [
+            "Reel. Question of the day. GCSE Maths, AQA, Edexcel and OCR, Foundation and Higher, Ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class? Original practice question by Educate Me AI, not from a past paper. Then: Pause, try it, and comment your answer, for 3 seconds with a bar, and the hint: which number in the ratio does the 15 go with? Then the answer, 40 students, and How marks are usually given, for the 3 marks: one part is 15 divided by 3, which is 5; 8 parts in total; 8 times 5 is 40. Ends on: How did you get on? Join early access, link in bio."
+          ]
+        }
+      ]
+    }
+  ]
+}
