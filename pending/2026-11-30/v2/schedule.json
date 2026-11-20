@@ -1,0 +1,288 @@
+{
+  "batch": "2026-11-30",
+  "version": 2,
+  "approvalPhrase": "approve batch 2026-11-30 v2",
+  "brandId": "7636342",
+  "timezone": "Europe/London",
+  "instructions": [
+    "Schedule nothing until Rej says \"approve batch 2026-11-30 v2\" in chat. Any other version or wording is not approval.",
+    "Call getScheduledPosts for the whole date range first. If a post with the same date, time and network is already scheduled, do not schedule it again: tell Rej.",
+    "One Metricool post per network (one provider each), using that network's caption, title and networkData exactly as given. Media, cover and altText are the post's, unless the platform has its own (Question of the day: the slides on Instagram, the reel version on TikTok and YouTube Shorts); then use the platform's.",
+    "Only platforms with status \"schedule\" (and check getBrandSettings networksData). \"pending connection\" (YouTube until it is connected) and \"skipped on purpose\" (Facebook: Instagram auto-shares) are not scheduled; list them for Rej.",
+    "Skip any post with doNotSchedule true.",
+    "Metricool plan: Free, 20 published posts a month in one total across networks (each network's post counts once). A post with planGate is scheduled only once Rej has said in chat that the Starter upgrade is done; until then tell Rej it is waiting on that.",
+    "AI labels: networkData sets them per post (instagramData.isAiGenerated, tiktokData.isAigc, youtubeData.isAiGeneratedContent); send them exactly as given. A post with pinAfterPosting: remind Rej to pin it once it is live.",
+    "Reels: media is the MP4 (soundtrack built in); use cover as videoThumbnailUrl. Instagram carousels stay silent; TikTok photo carousels have autoAddMusic true.",
+    "Times are UK local (Europe/London). Never change a date, time or caption without Rej asking.",
+    "After scheduling, confirm in chat with the Metricool ids. Claude Code logs them at the start of its next session (no email)."
+  ],
+  "posts": [
+    {
+      "id": "2026-12-01-tue-mocks-what-to-revise",
+      "title": "What to revise when you can’t revise everything",
+      "when": "Tue 1 Dec 2026, 4:30pm",
+      "dateTime": "2026-12-01T16:30",
+      "timezone": "Europe/London",
+      "format": "carousel",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-01-tue-mocks-what-to-revise/slide-01.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-01-tue-mocks-what-to-revise/slide-02.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-01-tue-mocks-what-to-revise/slide-03.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-01-tue-mocks-what-to-revise/slide-04.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-01-tue-mocks-what-to-revise/slide-05.jpg"
+      ],
+      "altText": [
+        "Navy slide with Educate Me AI logo. Text: GCSE and A-level, mocks season. What to revise when you can’t revise everything. A quick way to pick what comes first.",
+        "Sort it in 10 minutes. 1: List what’s in the mock. Ask your teacher what each mock covers; not every topic will be in it. 2: Rate each topic: confident, getting there, or not yet. 3: Start in the middle. Getting there topics first: you already know some of it, so a little practice goes a long way.",
+        "Then make each session count. Questions first: try a question before you re-read your notes. Mix it up: two or three subjects a day, in short blocks. Not yet: for not yet topics, learn the basics, key words, definitions and the main ideas.",
+        "Short on time for a topic? Two cards. Learn the key words, enough to understand the question and start an answer. Practise one exam-style question, then check it against the answer and fix one thing. Mocks are practice. Whatever you don’t get to goes on your list for afterwards.",
+        "Navy end slide with Em’s three circles in green, orange and pink. Text: Save this for mocks. Send it to someone with mocks too. Follow for a new revision plan every week."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "POST",
+          "label": "Instagram carousel",
+          "caption": "Can’t revise everything before your mocks? Nobody can. Find out what each mock covers, rate each topic (confident, getting there, not yet), and start with the “getting there” ones: you already know some of it, so a little practice goes a long way.\n\nTry a question before you re-read your notes, mix two or three subjects a day, and for “not yet” topics learn the key words and main ideas first.\n\nSave this for mocks, and send it to someone with mocks too. Join early access · link in bio.\n\n#Mocks #GCSE #ALevel #Revision #StudyTips #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "POST",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "photo carousel",
+          "label": "TikTok photo carousel",
+          "caption": "Can’t revise everything before mocks? Find out what’s in each mock, rate your topics, and start with the “getting there” ones. Questions before notes, two or three subjects a day.\n\nSave this for mocks. Join early access · link in bio.\n\n#Mocks #GCSE #ALevel #Revision #StudyTips #StudyTok",
+          "title": "What to revise when you can’t revise everything",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "What to revise when you can’t revise everything",
+              "autoAddMusic": true,
+              "photoCoverIndex": 0
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        }
+      ]
+    },
+    {
+      "id": "2026-12-03-thu-lock-it-in-4-series-circuits",
+      "title": "Series circuits: what stays the same?",
+      "when": "Thu 3 Dec 2026, 5pm",
+      "dateTime": "2026-12-03T17:00",
+      "timezone": "Europe/London",
+      "format": "reel",
+      "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-03-thu-lock-it-in-4-series-circuits/cover.jpg",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-03-thu-lock-it-in-4-series-circuits/reel.mp4"
+      ],
+      "altText": [
+        "Reel, Lock It In number 4, GCSE Physics, Electricity. Question: in a series circuit, what’s the same and what’s shared? Two cards side by side. Current: the same through each component, measured in amps, for example 0.2 A at every point. Potential difference, also called voltage, in volts: shared across the components, for example a 6 V supply giving 2 V plus 4 V. Text: Current, one loop, so the same current flows through every component. Potential difference, the supply’s p.d. is shared between the components. Resistance, add them up, total R equals R1 plus R2. Memory trick: series, current stays, p.d. splits. Parallel is the other way round: same p.d. on each branch, the current splits. Ends on: Save this. Lock it in. Follow for Lock It In number 5."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "REEL",
+          "label": "Instagram Reel",
+          "caption": "Series circuits at GCSE: there’s one loop, so the current is the same through every component. The potential difference (voltage) of the supply is shared between the components, so a 6 V supply could give 2 V across one and 4 V across the other. And the total resistance is the resistances added up.\n\nMemory trick: series, current stays, p.d. splits. Parallel is the other way round: the same p.d. across each branch, and the current splits between branches.\n\nSave this for your Physics revision. Lock It In #5 next week. Join early access · link in bio.\n\n#GCSE #GCSEPhysics #GCSEScience #Revision #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "REEL",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "video",
+          "label": "TikTok video",
+          "caption": "Series circuits: same current everywhere, the potential difference (voltage) is shared, and resistances add up. Memory trick: series, current stays, p.d. splits. Parallel is the other way round.\n\nSave this. Lock It In #5 next week. Join early access · link in bio.\n\n#GCSE #GCSEPhysics #GCSEScience #Revision #StudyTok",
+          "title": "Series circuits: what stays the same?",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Series circuits: what stays the same?",
+              "autoAddMusic": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "youtube",
+          "type": "short",
+          "label": "YouTube Shorts",
+          "caption": "Series circuits: same current everywhere, the potential difference (voltage) is shared, and resistances add up. Memory trick: series, current stays, p.d. splits. Parallel is the other way round.\n\nSave this. Lock It In #5 next week. Join early access: https://www.educatemeai.co.uk/early-access?src=youtube\n\n#GCSE #GCSEPhysics #GCSEScience #Shorts",
+          "title": "Series circuits: what stays the same?",
+          "networkData": {
+            "youtubeData": {
+              "title": "Series circuits: what stays the same?",
+              "type": "short",
+              "privacy": "public",
+              "madeForKids": false,
+              "category": "EDUCATION"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "pending connection"
+        }
+      ]
+    },
+    {
+      "id": "2026-12-05-sat-parents-mocks-when",
+      "title": "Mocks this term or in January?",
+      "when": "Sat 5 Dec 2026, 9:00am",
+      "dateTime": "2026-12-05T09:00",
+      "timezone": "Europe/London",
+      "format": "carousel",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-05-sat-parents-mocks-when/slide-01.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-05-sat-parents-mocks-when/slide-02.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-05-sat-parents-mocks-when/slide-03.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-05-sat-parents-mocks-when/slide-04.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-05-sat-parents-mocks-when/slide-05.jpg"
+      ],
+      "altText": [
+        "Navy slide with Educate Me AI logo. Text: For parents, mocks season. Mocks this term or in January? Schools choose their own dates. How to find out, and what helps either way.",
+        "Finding out. Check the school’s newsletter, website, app or parent portal; mock dates are often posted there. Ask your teenager what’s on and when; a shared calendar helps. Mocks are set by the school, not the exam board, so dates and subjects differ from school to school.",
+        "Either way. The Christmas break looks a bit different. Mocks before Christmas: a proper break, results may come back in January. Mocks in January: a little, not a lot, a light plan over the holidays with real days off. Make the plan together, so it’s theirs.",
+        "In mocks week. Space: a quiet spot to revise, and somewhere to keep the timetable. Routine: keep evenings normal, meals together, downtime and a sensible bedtime. Mocks are practice. The results are a to-do list, not a verdict.",
+        "Navy end slide with Em’s three circles in green, orange and pink. Text: Save this for mocks season. Share it with another parent. Follow for calm, practical exam-season help."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "POST",
+          "label": "Instagram carousel",
+          "caption": "Mocks this term or in January? Schools set their own mock dates, so it differs from school to school. The newsletter, website, app or parent portal usually has them, or ask your teenager what’s on and when.\n\nMocks before Christmas: the holidays can be a proper break. Mocks in January: a light plan, with real days off. Either way, mocks are practice, and the results are a to-do list, not a verdict.\n\nSave this for mocks season, and share it with another parent. Join early access · link in bio.\n\n#Mocks #GCSE #ALevel #Parents #ExamSeason",
+          "networkData": {
+            "instagramData": {
+              "type": "POST",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "photo carousel",
+          "label": "TikTok photo carousel",
+          "caption": "Mocks this term or in January? Schools set their own dates, so check the newsletter or parent portal. Before Christmas: a proper break. In January: a light plan with real days off.\n\nSave this, and share it with another parent. Join early access · link in bio.\n\n#Mocks #GCSE #ALevel #Parents #ExamSeason",
+          "title": "Mocks this term or in January?",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Mocks this term or in January?",
+              "autoAddMusic": true,
+              "photoCoverIndex": 0
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        }
+      ]
+    },
+    {
+      "id": "2026-12-06-sun-qotd-1-ratio",
+      "title": "2026-12-06-sun-qotd-1-ratio",
+      "when": "Sun 6 Dec 2026, 6pm",
+      "dateTime": "2026-12-06T18:00",
+      "timezone": "Europe/London",
+      "format": "carousel + reel",
+      "planGate": "Metricool Free plan: schedule only after Rej has confirmed the Starter upgrade in chat",
+      "media": [
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-06-sun-qotd-1-ratio/slide-01.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-06-sun-qotd-1-ratio/slide-02.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-06-sun-qotd-1-ratio/slide-03.jpg",
+        "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-06-sun-qotd-1-ratio/slide-04.jpg"
+      ],
+      "altText": [
+        "Navy slide. Question of the day. GCSE Maths, AQA, Edexcel and OCR, Foundation and Higher, Ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class? Original practice question by Educate Me AI, not from a past paper.",
+        "Have a go first. Comment your answer, then swipe to check. Hint: which number in the ratio does the 15 go with?",
+        "The answer: 40 students. How marks are usually given: 1 mark for one part, 15 divided by 3 equals 5; 1 mark for counting the parts, 3 plus 5 equals 8, or 5 times 5 equals 25 who don’t walk; 1 mark for 8 times 5 equals 40, or 15 plus 25 equals 40. The 15 is one share, not the whole class, so don’t start with 15 divided by 8.",
+        "Navy end slide with Em's three circles. How did you get on? Join early access, link in bio. Follow for a new question every week."
+      ],
+      "platforms": [
+        {
+          "network": "instagram",
+          "type": "POST",
+          "label": "Instagram carousel",
+          "caption": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Foundation and Higher, ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class?\n\nHave a go, comment your answer, then swipe. The answer and how marks are usually given are on slide 3.\n\nOriginal practice question by Educate Me AI, not from a past paper.\n\nAnswer in the comments · Join early access, link in bio.\n\n#GCSEMaths #GCSE #Ratio #MathsRevision #StudyTok",
+          "networkData": {
+            "instagramData": {
+              "type": "POST",
+              "showReelOnFeed": true,
+              "isAiGenerated": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule"
+        },
+        {
+          "network": "tiktok",
+          "type": "video",
+          "label": "TikTok video",
+          "caption": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Foundation and Higher, ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class? Pause, try it, and comment your answer.\n\nOriginal practice question by Educate Me AI, not from a past paper.\n\nAnswer in the comments · Join early access, link in bio.\n\n#GCSEMaths #GCSE #Ratio #MathsRevision #StudyTok",
+          "title": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Ratio (3 marks)",
+          "networkData": {
+            "tiktokData": {
+              "privacyOption": "PUBLIC_TO_EVERYONE",
+              "title": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Ratio (3 marks)",
+              "autoAddMusic": false
+            }
+          },
+          "connectedInMetricool": true,
+          "status": "schedule",
+          "media": [
+            "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-06-sun-qotd-1-ratio/reel.mp4"
+          ],
+          "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-06-sun-qotd-1-ratio/cover.jpg",
+          "altText": [
+            "Reel. Question of the day. GCSE Maths, AQA, Edexcel and OCR, Foundation and Higher, Ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class? Original practice question by Educate Me AI, not from a past paper. Then: Pause, try it, and comment your answer, for 3 seconds with a bar, and the hint: which number in the ratio does the 15 go with? Then the answer, 40 students, and How marks are usually given, for the 3 marks: one part is 15 divided by 3, which is 5; 8 parts in total; 8 times 5 is 40. Ends on: How did you get on? Join early access, link in bio."
+          ]
+        },
+        {
+          "network": "youtube",
+          "type": "short",
+          "label": "YouTube Shorts",
+          "caption": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Foundation and Higher, ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class? Pause, try it, and comment your answer.\n\nOriginal practice question by Educate Me AI, not from a past paper.\n\nAnswer in the comments · Join early access: https://www.educatemeai.co.uk/early-access?src=youtube\n\n#GCSEMaths #GCSE #Ratio #Shorts",
+          "title": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Ratio (3 marks)",
+          "networkData": {
+            "youtubeData": {
+              "title": "Question of the day: GCSE Maths (AQA, Edexcel, OCR), Ratio (3 marks)",
+              "type": "short",
+              "privacy": "public",
+              "madeForKids": false,
+              "category": "EDUCATION"
+            }
+          },
+          "connectedInMetricool": false,
+          "status": "pending connection",
+          "media": [
+            "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-06-sun-qotd-1-ratio/reel.mp4"
+          ],
+          "cover": "https://raw.githubusercontent.com/educatemeai/emai-social-media/main/pending/2026-11-30/v2/2026-12-06-sun-qotd-1-ratio/cover.jpg",
+          "altText": [
+            "Reel. Question of the day. GCSE Maths, AQA, Edexcel and OCR, Foundation and Higher, Ratio, 3 marks. In a class, 15 students walk to school. The ratio of students who walk to students who don’t is 3 : 5. How many students are in the class? Original practice question by Educate Me AI, not from a past paper. Then: Pause, try it, and comment your answer, for 3 seconds with a bar, and the hint: which number in the ratio does the 15 go with? Then the answer, 40 students, and How marks are usually given, for the 3 marks: one part is 15 divided by 3, which is 5; 8 parts in total; 8 times 5 is 40. Ends on: How did you get on? Join early access, link in bio."
+          ]
+        }
+      ]
+    }
+  ]
+}
